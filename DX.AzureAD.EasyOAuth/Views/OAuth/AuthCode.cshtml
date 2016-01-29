@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Authorization Complete";
+}
+<div class="row" style="padding: 5px;">
+    <div class="col-md-12">
+        <p>You can now close this authorization dialog.</p>
+    </div>
+</div>
+@section Scripts {
+    <script type="text/javascript">
+        var host = "@ViewData["host"]";
+        var tokenStr = "@ViewData["token"]";
+        tokenStr = tokenStr.replace(/&quot;/g, '"');
+        var token = JSON.parse(tokenStr);
+        var data = { action: "success", token: token };
+
+        //send the token back to the opener and close window
+        window.opener.postMessage(JSON.stringify(data), host);
+        window.close();
+    </script>
+}

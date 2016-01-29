@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DX.AzureAD.EasyOAuth", "DX.AzureAD.EasyOAuth\DX.AzureAD.EasyOAuth.csproj", "{6BAF53A5-EF3D-465B-B5F2-B99B5F06AD39}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DX.AzureAD.EasyOAuth.Data", "DX.AzureAD.EasyOAuth.Data\DX.AzureAD.EasyOAuth.Data.sqlproj", "{67C31591-D937-4AC9-A935-A458FB352F82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BAF53A5-EF3D-465B-B5F2-B99B5F06AD39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BAF53A5-EF3D-465B-B5F2-B99B5F06AD39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BAF53A5-EF3D-465B-B5F2-B99B5F06AD39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BAF53A5-EF3D-465B-B5F2-B99B5F06AD39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C31591-D937-4AC9-A935-A458FB352F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C31591-D937-4AC9-A935-A458FB352F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C31591-D937-4AC9-A935-A458FB352F82}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{67C31591-D937-4AC9-A935-A458FB352F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C31591-D937-4AC9-A935-A458FB352F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C31591-D937-4AC9-A935-A458FB352F82}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,31 @@
+﻿<div class="jumbotron">
+    <h1>Azure AD Easy OAuth</h1>
+    <p class="lead">Azure AD Easy OAuth is a simple application registry and proxy site for making client-side authentication a breeze with Azure AD and Office 365. Use the button and information below to register an application and wire up Eazy OAuth in your applications. It doesn't have any javascript library dependencies, so you can use it with just about anything.</p>
+    <iframe width="1000" height="562" src="https://www.youtube.com/embed/dDlsfCwvwvo" frameborder="0" allowfullscreen></iframe>
+</div>
+<div class="jumbotron" style="background-color: #fff;">
+    <h2>How it works</h2>
+    <p>1. Register an Application:</p>
+    <a href="/Application" class="btn btn-primary btn-lg">Register an App &raquo;</a>
+    <br />
+    <br />
+    <p>2. Reference EasyOAuth.js script while providing the application client id:</p>
+    <div style="width: 100%; border: 1px solid #333; background-color: #fff; overflow-x: hidden; overflow-y: auto; font-family: Consolas; font-size: 14px; line-height: 100%; padding: 10px;">
+        &lt;script src="https://easyauth.azurewebsites.net/EasyOAuth.js" data-clientid="a5bd9b99-f22b-4657-bbfe-49ee4fc563e5"&gt;&lt;/script&gt;
+    </div>
+    <br />
+    <p>3. Invoke AzureADAuth.getAccessToken with then/error promises:</p>
+    <div style="width: 100%; border: 1px solid #333; background-color: #fff; overflow-x: hidden; overflow-y: auto; font-family: Consolas; font-size: 14px; line-height: 100%; padding: 10px;">
+        AzureADAuth.getAccessToken()<br />
+        &nbsp;&nbsp;&nbsp;.then(function (token) {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//handle token<br />
+        &nbsp;&nbsp;&nbsp;})<br />
+        &nbsp;&nbsp;&nbsp;.error(function (err) {<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//handle error<br />
+        &nbsp;&nbsp;&nbsp;});<br />
+        );
+    </div>
+    <br />
+    <h2>Give it a try</h2>
+    <p data-height="268" data-theme-id="0" data-slug-hash="KdbmLb" data-default-tab="result" data-user="richdizz" class='codepen'>See the Pen <a href='http://codepen.io/richdizz/pen/KdbmLb/'>Azure AD Easy OAuth</a> by Richard diZerega (<a href='http://codepen.io/richdizz'>richdizz</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+    <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
